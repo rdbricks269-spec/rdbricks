@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import './App.css';
 
 function App() {
@@ -239,7 +239,7 @@ Please confirm availability & delivery!`;
           <h3>🏭 RD Bricks Kiln</h3>
           <p><strong>📍 Location</strong><br />Panchubigha Chakand<br />Gaya, Bihar 823004</p>
           <div className="phone">📞 <strong>+91 92627 29850</strong></div>
-          <a href="https://wa.me/919771084122" className="whatsapp-btn" target="_blank">
+          <a href="https://wa.me/919771084122" className="whatsapp-btn" target="_blank" rel="noreferrer">
             💬 WhatsApp Now
           </a>
         </div>
