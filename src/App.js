@@ -138,10 +138,10 @@ Please confirm availability & delivery!`;
         <h2>🖼️ Gallery</h2>
         <div className="gallery-grid">
           <img src="/images/kiln.jpeg" alt="Kiln" />
-          <img src="https://via.placeholder.com/300x200/DC143C/FFF?text=Red+Bricks" alt="Bricks" />
+          <img src="/images/bricks.jpg" alt="Bricks" />
           <img src="https://via.placeholder.com/300x200/C71585/FFF?text=Loading+Truck" alt="Delivery" />
           <img src="images/site.jpeg" alt="Site" />
-          <img src="https://via.placeholder.com/300x200/A52A2A/FFF?text=Quality+Check" alt="Quality" />
+          <img src="images/kiln1.jpg" alt="Quality" />
           <img src="https://via.placeholder.com/300x200/8B0000/FFF?text=Customer+Delivery" alt="Customer" />
         </div>
       </section>
