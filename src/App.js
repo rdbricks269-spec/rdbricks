@@ -53,7 +53,7 @@ Please confirm availability & delivery!`;
     window.open(whatsappUrl, '_blank');
   };
 
-  const products = [
+ const products = [
     { id: 1, type: 'type1', title: '🔥 Type 1 Red Bricks', price: '₹7', desc: 'Premium Quality, House Construction', img: 'https://via.placeholder.com/280x200/DC143C/FFF?text=Type+1+Premium' },
     { id: 2, type: 'type2', title: '🏗️ Type 2 Red Bricks', price: '₹5', desc: 'Standard Grade, Wall Construction', img: 'https://via.placeholder.com/280x200/C71585/FFF?text=Type+2+Standard' },
     { id: 3, type: 'type3', title: '💪 Type 3 Red Bricks', price: '₹5', desc: 'Basic Grade, Floor Filling', img: 'https://via.placeholder.com/280x200/B22222/FFF?text=Type+3+Basic' },
