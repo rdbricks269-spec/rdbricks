@@ -42,7 +42,7 @@ function App() {
 👤 Name: ${formData.name}
 📱 WhatsApp: ${formData.phone}
 📧 Email: ${formData.email}
-📦 Quantity: ${formData.quantity} thousands
+📦 Quantity: ${formData.quantity}
 🧱 Type: ${formData.brick}
 🚚 Location: ${formData.location}
 💰 Total: ${document.getElementById('quote-total')?.textContent || '₹0'}
@@ -139,14 +139,14 @@ Please confirm availability & delivery!`;
         <div className="gallery-grid">
           <img src="/images/kiln.jpeg" alt="Kiln" />
           <img src="/images/bricks.jpg" alt="Bricks" />
-          <img src="https://via.placeholder.com/300x200/C71585/FFF?text=Loading+Truck" alt="Delivery" />
+          <img src="images/rawbricks.jpg" alt="raw bricks" />
           <img src="images/site.jpeg" alt="Site" />
-          <img src="images/kiln1.jpg" alt="Quality" />
-          <img src="https://via.placeholder.com/300x200/8B0000/FFF?text=Customer+Delivery" alt="Customer" />
+          <img src="images/emptychamber.jpg" alt="chamber" />
+          <img src="images/redbrick.jpg" alt="red brick" />
         </div>
       </section>
 
-      {/* ABOUT SECTION - RESTORED */}
+      {/* ABOUT SECTION */}
       <section id="about">
         <h2>ℹ️ About RD Bricks</h2>
         <div className="about-content">
@@ -178,7 +178,7 @@ Please confirm availability & delivery!`;
         </div>
       </section>
 
-      {/* PERFECT WHATSAPP QUOTE FORM */}
+      {/* WHATSAPP QUOTE FORM */}
       <section id="quote">
         <h2>💰 Instant Quote Calculator</h2>
         <div className="form-section">
