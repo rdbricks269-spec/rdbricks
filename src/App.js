@@ -21,7 +21,7 @@ function App() {
   const calculateQuote = () => {
     const qty = quantityRef.current?.value || 0;
     const type = brickRef.current?.value;
-    const prices = { type1: 7, type2: 5, type3: 5, type4: 5, type5: 1.4 };
+    const prices = { type1: 9.34, type2: 7.6, type3: 7.6, type4: 7.6, type5: 2 };
     const total = (qty * (prices[type] || 0)).toLocaleString();
     const quoteElement = document.getElementById('quote-total');
     if (quoteElement) quoteElement.textContent = `₹${total}`;
@@ -58,11 +58,11 @@ Please confirm availability & delivery!`;
   };
 
   const products = [
-    { id: 1, type: 'type1', title: '🔥 Type 1 Red Bricks', price: '₹7', desc: 'Premium Quality, House Construction',img: 'https://via.placeholder.com/280x200/DC143C/FFF?text=Type+1+Premium'},
-    { id: 2, type: 'type2', title: '🏗️ Type 2 Red Bricks', price: '₹5', desc: 'Standard Grade, Wall Construction', img: 'https://via.placeholder.com/280x200/C71585/FFF?text=Type+2+Standard' },
-    { id: 3, type: 'type3', title: '💪 Type 3 Red Bricks', price: '₹5', desc: 'Basic Grade, Floor Filling', img: 'https://via.placeholder.com/280x200/B22222/FFF?text=Type+3+Basic' },
-    { id: 4, type: 'type4', title: '🪨 Type 4 Red Bricks', price: '₹5', desc: 'Strong, Structural Base', img: 'https://via.placeholder.com/280x200/8B0000/FFF?text=Type+4+Strong' },
-    { id: 5, type: 'type5', title: '🧱 Tukda Bricks', price: '₹1.4', desc: 'Broken Pieces, Perfect Filling', img: 'https://via.placeholder.com/280x200/A52A2A/FFF?text=Tukda+Fill' }
+    { id: 1, type: 'type1', title: '🔥 Type 1 Red Bricks', price: '₹9.34', desc: 'Premium Quality, House Construction',img: 'https://via.placeholder.com/280x200/DC143C/FFF?text=Type+1+Premium'},
+    { id: 2, type: 'type2', title: '🏗️ Type 2 Red Bricks', price: '₹7.6', desc: 'Standard Grade, Wall Construction', img: 'https://via.placeholder.com/280x200/C71585/FFF?text=Type+2+Standard' },
+    { id: 3, type: 'type3', title: '💪 Type 3 Red Bricks', price: '₹7.6', desc: 'Basic Grade, Floor Filling', img: 'https://via.placeholder.com/280x200/B22222/FFF?text=Type+3+Basic' },
+    { id: 4, type: 'type4', title: '🪨 Type 4 Red Bricks', price: '₹7.6', desc: 'Strong, Structural Base', img: 'https://via.placeholder.com/280x200/8B0000/FFF?text=Type+4+Strong' },
+    { id: 5, type: 'type5', title: '🧱 Tukda Bricks', price: '₹2', desc: 'Broken Pieces, Perfect Filling', img: 'https://via.placeholder.com/280x200/A52A2A/FFF?text=Tukda+Fill' }
   ];
 
   return (
@@ -221,11 +221,11 @@ Please confirm availability & delivery!`;
             
             <select ref={brickRef} name="brick_type" required onChange={calculateQuote}>
               <option value="">🧱 Select Brick Type</option>
-              <option value="type1">Type 1 Red Bricks (₹7/pc)</option>
-              <option value="type2">Type 2 Red Bricks (₹5/pc)</option>
-              <option value="type3">Type 4 Red Bricks (₹5/pc)</option>
-              <option value="type4">Type 4 Red Bricks (₹5/pc)</option>
-              <option value="type5">Tukda Bricks (₹1.4/pc)</option>
+              <option value="type1">Type 1 Red Bricks (₹9.34/pc)</option>
+              <option value="type2">Type 2 Red Bricks (₹7.6/pc)</option>
+              <option value="type3">Type 4 Red Bricks (₹7.6/pc)</option>
+              <option value="type4">Type 4 Red Bricks (₹7.6/pc)</option>
+              <option value="type5">Tukda Bricks (₹2/pc)</option>
             </select>
             
             <input ref={locationRef} name="location" placeholder="🚚 Delivery Location *" required maxLength="100" />
